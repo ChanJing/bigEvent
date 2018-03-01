@@ -4,14 +4,12 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <!-- Bootstrap CSS -->
     <!-- 引入样式 -->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 
     <!-- 引入组件库 -->
     <!-- <script src="https://unpkg.com/mint-ui/lib/index.js"></script> -->
@@ -20,59 +18,109 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-<div id="container" style="width:100%;">
+    <div class="jumbotron" style="height:250px;
+    background-size:cover;background-position:center;
+    background-image: url('http://img1.mydrivers.com/img/20171226/deb7a2f88bf344149b72eea1549afa66.jpg');">
+        <h3 style="color:white"><font>「让我们一起窒息」</font></h1>
+        
+        <p style="color:white" ># 贾跃亭到底是被“驱逐” <br>还是“金蝉脱壳” #</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">订阅</a>
+        </p>
+    </div>
+    <div id="container" style="width:100%;">
+        <!-- 第1个item -->
+        <div style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
+            <div style="width:25%;display: flex;justify-content: center;align-items: center">
 
-    <div style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
-        <div style="width:25%;display: flex;justify-content: center;align-items: center">
+                <h5>#7月3日#</h5>
 
-            <h5>7-3</h5>
+            </div>
 
+            <div style=" padding:10px ;background:red ;width:75%;display: flex;justify-content: center;align-items: center ; ">
+                <div class="card" style="padding:15px">
+                    <h5>「
+                        <font style="color:blue" data-toggle="modal" data-target="#myModal">贾跃亭</font>幅书法的发送到发沙发上发生大发发到付」</h5>
+                    <a data-toggle="modal" href="www.baidu.com" data-target="#news_model">请点击我</a>
+                </div>
+            </div>
+        </div>
+        <!-- 第2个item -->
+        <div style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
+
+            <div style=" padding:10px ;background:red ;width:75%;display: flex;justify-content: center;align-items: center ; ">
+                <div class="card" style="padding:15px" data-dismiss="modal" data-toggle="modal" data-target="#news_model">
+                    <h5>
+                        <font style="color:blue" data-toggle="modal" data-target="#label_model">贾跃亭</font>
+                        幅书法的发送到发沙发上发生大发发到付
+                        <font style="color:blue" data-toggle="modal" data-target="#label_model">乐视</font>
+                    </h5>
+
+                </div>
+            </div>
+
+            <div style="width:25%;display: flex;justify-content: center;align-items: center">
+
+                <h5>#7月4日#</h5>
+
+            </div>
         </div>
 
-        <div style="width:75%;display: flex;justify-content: center;align-items: center">
-            
-            <h5 data-toggle="modal" data-target="#myModal"><font style="color:blue">贾跃亭</font></h5>
-            <a href="https://v.vzuu.com/video/898618006509322240">视频</a>
+
+    </div>
+    <!-- 时间点类型的模态框（Modal） -->
+    <div class="modal fade" id="news_model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="height: 80%; margin-top: 150px">
+            <div class="modal-content" style="height: 80%;">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">
+                        「」
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本
+                </div>
+
+            </div>
+            <!-- /.modal-content -->
         </div>
+        <!-- /.modal -->
     </div>
 
+    <!-- 标签类型的模态框（Modal） -->
+    <div class="modal fade" id="label_model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="height: 80%; margin-top: 150px">
+            <div class="modal-content" style="height: 80%;">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">
+                        「标签」
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本
+                </div>
 
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+    </div>
 
-</div>
-<!-- 模态框（Modal） -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" style="height: 80%; margin-top: 150px">
-     <div class="modal-content" style="height: 80%;">
-      <div class="modal-header">
-       <h4 class="modal-title" id="myModalLabel">
-        模态框（Modal）标题
-       </h4>
-      </div>
-      <div class="modal-body">
-       在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本在这里添加一些文本
-      </div>
-   
-     </div><!-- /.modal-content -->
-    </div><!-- /.modal -->
-   </div>
-
-<script>
-    $(function () {
-        $("[data-toggle='popover']").popover();
-    });
-</script>
+    <script>
+        $('#label_model').on('hide.bs.modal', function () {
+            $('#news_model').modal('hide')
+            // 执行一些动作...
+        })
+    </script>
 </body>
 
 </html>
