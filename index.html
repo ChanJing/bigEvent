@@ -59,9 +59,12 @@
         </div>
 
         <div style=" padding:10px ;width:75%;display: flex;justify-content: center;align-items: center ;"
-             data-dismiss="modal" data-toggle="modal" data-target="#news_model1">
+             class="mm" order="1"
+             >
             <div class="card" style="padding:15px">
-                <h5>乐视被曝「<font style="color:blue" data-toggle="modal" data-target="#label_model1">庞氏骗局</font>」</h5>
+                <h5>乐视被曝「<font style="color:blue" 
+                    class="mm" order="2"
+                    >庞氏骗局</font>」</h5>
             </div>
         </div>
     </div>
@@ -69,14 +72,15 @@
     <div style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
 
         <div style=" padding:10px ;width:75%;display: flex;justify-content: center;align-items: center ; ">
-            <div class="card" style="padding:15px" data-dismiss="modal" data-toggle="modal" data-target="#news_model">
+            <div class="card mm" style="padding:15px" order="3">
                 <!-- <h5>
                      <font style="color:blue" data-toggle="modal" data-target="#label_model">贾跃亭</font>
                      幅书法的发送到发沙发上发生大发发到付
                      <font style="color:blue" data-toggle="modal" data-target="#label_model">乐视</font>
                  </h5>-->
 
-                <h5>乐视北美总部进行裁员，五月底「人走楼空」</h5>
+                <h5>乐视北美总部进行裁员，五月底「<font style="color:blue" 
+                    >人走楼空</font>」</h5>
 
             </div>
         </div>
@@ -96,11 +100,12 @@
         </div>
 
         <div style=" padding:10px ;width:75%;display: flex;justify-content: center;align-items: center ; ">
-            <div class="card" style="padding:15px">
+            <div class="card mm" style="padding:15px" order="4">
                 <!--<h5>「
                     <font style="color:blue" data-toggle="modal" data-target="#myModal">贾跃亭</font>幅书法的发送到发沙发上发生大发发到付」</h5>
 -->
-                <h5>贾跃亭辞去乐视 CEO 职务</h5>
+                <h5><font style="color:blue" class="mm" order="5"
+                    >贾跃亭</font>辞去乐视 CEO 职务</h5>
             </div>
         </div>
     </div>
@@ -328,10 +333,253 @@
 
 
 
-        <script>
-    $('#label_model1').on('hide.bs.modal', function () {
-        $('#news_model1').modal('hide')
-        // 执行一些动作...
+<script>
+
+    var data_list = 
+        [
+            {
+                id: 1,
+                header: 
+                    {
+                        title: "「专访内华达财政部长:我为什么说乐视是庞氏骗局？」",
+                        link: "http://finance.sina.com.cn/stock/s/2016-11-17/doc-ifxxwrwh4516079.shtml",
+                        span: "9452阅读量",
+                        para: "戳一下查看详细文章",
+                        hint: "来自 新华网"
+                    },
+                answers:
+                    [
+                        {
+                            title: "『庞氏骗局』是什么？ - 知乎",
+                            link: "https://www.zhihu.com/question/37737418",
+                            hint: "1402赞"
+                        },
+                        {
+                            title: "乐视网到底是不是庞氏骗局？ - 知乎",
+                            link: "https://www.zhihu.com/question/56635281",
+                            hint: "152赞"
+                        }
+                    ],
+                articles:
+                    [   
+                        {
+                            title: "乐视的ppt真的是庞氏骗局吗？ - 知乎专栏",
+                            link: "https://zhuanlan.zhihu.com/p/23894016",
+                            hint: "152赞"
+                        }
+                    ]
+            },
+            {
+                id: 2,
+                header: 
+                    {
+                        title: "乐视控股是一个庞氏骗局吗？",
+                        link: "https://www.zhihu.com/question/36265793",
+                        span: "5983赞",
+                        para: "事先说明，题主问的是“乐视控股”是不是一个庞氏骗局，由于“乐视控股”下设“乐视网”，而公开市场获得的资料是基于“乐视网”这一上市主体的，所以以下回答是基于“乐视网”这一上市公司而言。",
+                        hint: "来自知乎用户Molly.Niu"
+                    },
+                answers:
+                    [
+                        {
+                            title: "『庞氏骗局』是什么？ - 知乎",
+                            link: "https://www.zhihu.com/question/37737418",
+                            hint: "1402赞"
+                        },
+                        {
+                            title: "乐视网到底是不是庞氏骗局？ - 知乎",
+                            link: "https://www.zhihu.com/question/56635281",
+                            hint: "152赞"
+                        }
+                    ],
+                articles:
+                    [   
+                        {
+                            title: "乐视的ppt真的是庞氏骗局吗？ - 知乎专栏",
+                            link: "https://zhuanlan.zhihu.com/p/23894016",
+                            hint: "152赞"
+                        }
+                    ]
+            },
+            {
+                id: 3,
+                header: 
+                    {
+                        title: "乐视北美总部进行裁员，五月底「人走楼空」",
+                        link: "http://tech.sina.com.cn/roll/2017-06-05/doc-ifyfuzym8010887.shtml",
+                        span: "2774浏览量",
+                        para: "戳一下查看详细文章",
+                        hint: "来自 新浪科技"
+                    },
+                answers:
+                    [
+                        {
+                            title: "『庞氏骗局』是什么？ - 知乎",
+                            link: "https://www.zhihu.com/question/37737418",
+                            hint: "1402赞"
+                        },
+                        {
+                            title: "乐视网到底是不是庞氏骗局？ - 知乎",
+                            link: "https://www.zhihu.com/question/56635281",
+                            hint: "152赞"
+                        }
+                    ],
+                articles:
+                    [   
+                        {
+                            title: "乐视的ppt真的是庞氏骗局吗？ - 知乎专栏",
+                            link: "https://zhuanlan.zhihu.com/p/23894016",
+                            hint: "152赞"
+                        }
+                    ]
+            },
+            {
+                id: 4,
+                header: 
+                    {
+                        title: "贾跃亭不再担任乐视控股法定代表人",
+                        link: "http://www.bjnews.com.cn/finance/2017/07/03/448996.html",
+                        span: "6666浏览",
+                        para: "戳一下查看详细文章",
+                        hint: "来自 新京报网"
+                    },
+                answers:
+                    [
+                        {
+                            title: "如何看待贾跃亭辞任乐视网所有职务、任乐视汽车董事长，但仍担任乐视控股股东？ - 知乎",
+                            link: "https://www.zhihu.com/question/62091959",
+                            hint: "1401赞"
+                        }
+                    ],
+                articles:
+                    [   
+                        {
+                            title: "网友炸了！贾跃亭老婆被爆跑去美国！融到钱后不打算回来了？ - 知乎专栏",
+                            link: "https://zhuanlan.zhihu.com/p/32351322",
+                            hint: "88赞"
+                        }
+                    ]
+            },
+            {
+                id: 5,
+                header: 
+                    {
+                        title: "我们玩的都是《王者荣耀》，贾跃亭玩的才是真正的《王者农药》。",
+                        link: "https://zhuanlan.zhihu.com/p/27776142",
+                        span: "9843赞",
+                        para: "戳一下查看详细文章",
+                        hint: "来自 知乎用户惊云"
+                    },
+                answers:
+                    [
+                        {
+                            title: "为什么大家都说贾跃亭是骗子? - 知乎",
+                            link: "https://www.zhihu.com/question/64701640/answer/225628570",
+                            hint: "737赞"
+                        },
+                        {
+                            title: "为何乐视出事后，老板娘甘薇的娱乐圈好姐妹就离她而去？这是否证明“戏子无义”？ - 知乎",
+                            link: "https://www.zhihu.com/question/67936600",
+                            hint: "1401赞"
+                        }
+                    ],
+                articles:
+                    [   
+                    ]
+            }
+        ]
+
+    // $('#label_model1').on('hide.bs.modal', function () {
+    //     $('#news_model1').modal('hide')
+    //     // 执行一些动作...
+    // })
+
+    // $('#label_model1').on('hide.bs.modal', function () {
+    //     this.modal('hide')
+    //     // 执行一些动作...
+    // })
+
+    $('.mm').on('click', function(e){
+        if($('#mk').length > 0){
+            $('#mk').remove();
+        }
+        // var layer = $(e.currentTarget).attr('layer');
+        var order = $(e.currentTarget).attr('order');
+        // console.log(layer);
+        // console.log(order);
+        e.stopPropagation();
+        var data = data_list.find(function(e){
+            return ("" + e.id) == order;
+        });
+        // console.log(data);
+
+        var al = `<h5 style="margin-top: 10px">相关问答</h5>`
+        for(i in data.answers){
+            e = data.answers[i];
+            al +=
+            `
+                <a href=${e.link}>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    ${e.title}
+                    <span class="badge badge-primary badge-pill">${e.hint}</span>
+                </li>
+                </a>
+            `;
+        }
+
+        // console.log(al);
+
+        var ql;
+        if(data.articles.length > 0){
+            ql = `<h5 style="margin-top: 10px">相关文章</h5>`;
+        }
+        else{
+            ql = "";
+        }
+        for(i in data.articles){
+            e = data.articles[i];
+            ql +=
+            `
+                <a href=${e.link}>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    ${e.title}
+                    <span class="badge badge-primary badge-pill">${e.hint}</span>
+                </li>
+                </a>
+            `;
+        }
+
+        // console.log(ql);
+
+    var ff =
+
+        `
+        <div class="modal fade" id="mk" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="height: 80%; margin-top: 150px">
+        <div class="modal-content">
+            <div class="modal-body">
+                <a href=${data.header.link} class="list-group-item list-group-item-action flex-column align-items-start active">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">${data.header.title}</h5>
+                        <span class="badge badge-primary badge-pill">${data.header.span}</span>
+                    </div>
+                    <p class="mb-1">${data.header.para}</p>
+                    <small>${data.header.hint}</small>
+                </a>
+                
+                ${al}
+                ${ql}
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal -->
+</div>
+        `;
+        $('body').append(ff);
+        // console.log(ff);
+        $('#mk').modal('show');
     })
    
 </script>
