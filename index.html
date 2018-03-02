@@ -4,12 +4,14 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <!-- Bootstrap CSS -->
     <!-- 引入样式 -->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
 
     <!-- 引入组件库 -->
     <!-- <script src="https://unpkg.com/mint-ui/lib/index.js"></script> -->
@@ -18,152 +20,304 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="jumbotron" style="height:250px;
+<div class="jumbotron" style="height:210px;
     background-size:cover;background-position:center;
     background-image: url('http://img1.mydrivers.com/img/20171226/deb7a2f88bf344149b72eea1549afa66.jpg');">
-        <h3 style="color:white">
-            <font>「让我们一起窒息」</font>
-            </h1>
+    <h3 style="color:white">
+        <font>「让我们一起窒息」</font>
+        </h1>
 
-            <p style="color:white"># 贾跃亭到底是被“驱逐”
-                <br>还是“金蝉脱壳” #</p>
-            <p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">订阅</a>
-                <a class="btn btn-primary btn-lg" href="#" role="button">分享</a>
-            </p>
+        <p style="color:white"># 贾跃亭到底是被“驱逐”
+            <br>还是“金蝉脱壳” #</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">订阅</a>
+            <a class="btn btn-primary btn-lg" href="#" role="button">分享</a>
+        </p>
+</div>
+
+
+<div id="container" style="width:100%;">
+    <!-- 第1个item -->
+    <div id="item1"
+         style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
+        <div style="width:25%;display: flex;justify-content: center;align-items: center">
+
+            <h6>#16年11月#</h6>
+
+        </div>
+
+        <div style=" padding:10px ;width:75%;display: flex;justify-content: center;align-items: center ;"
+             data-dismiss="modal" data-toggle="modal" data-target="#news_model1">
+            <div class="card" style="padding:15px">
+                <h5>乐视被曝「<font style="color:blue" data-toggle="modal" data-target="#label_model1">庞氏骗局</font>」</h5>
+            </div>
+        </div>
+    </div>
+    <!-- 第2个item -->
+    <div style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
+
+        <div style=" padding:10px ;width:75%;display: flex;justify-content: center;align-items: center ; ">
+            <div class="card" style="padding:15px" data-dismiss="modal" data-toggle="modal" data-target="#news_model">
+                <!-- <h5>
+                     <font style="color:blue" data-toggle="modal" data-target="#label_model">贾跃亭</font>
+                     幅书法的发送到发沙发上发生大发发到付
+                     <font style="color:blue" data-toggle="modal" data-target="#label_model">乐视</font>
+                 </h5>-->
+
+                <h5>乐视北美总部进行裁员，五月底「人走楼空」</h5>
+
+            </div>
+        </div>
+
+        <div style="width:25%;display: flex;justify-content: center;align-items: center">
+
+            <h5>#17年3月#</h5>
+
+        </div>
+    </div>
+    <!-- 第3个item -->
+    <div style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
+        <div style="width:25%;display: flex;justify-content: center;align-items: center">
+
+            <h5>#17年5月#</h5>
+
+        </div>
+
+        <div style=" padding:10px ;width:75%;display: flex;justify-content: center;align-items: center ; ">
+            <div class="card" style="padding:15px">
+                <!--<h5>「
+                    <font style="color:blue" data-toggle="modal" data-target="#myModal">贾跃亭</font>幅书法的发送到发沙发上发生大发发到付」</h5>
+-->
+                <h5>贾跃亭辞去乐视 CEO 职务</h5>
+            </div>
+        </div>
+    </div>
+    <!-- 第4个item -->
+    <div style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
+
+        <div style=" padding:10px ;width:75%;display: flex;justify-content: center;align-items: center ; ">
+            <div class="card" style="padding:15px" data-dismiss="modal" data-toggle="modal" data-target="#news_model">
+                <h5>
+                    贾跃亭财产被银行冻结
+                </h5>
+
+            </div>
+        </div>
+
+        <div style="width:25%;display: flex;justify-content: center;align-items: center">
+            <h5>#17年6月#</h5>
+        </div>
+    </div>
+
+    <!-- 第5个item -->
+    <div style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
+
+
+        <div style="width:25%;display: flex;justify-content: center;align-items: center">
+
+            <h5>#17年9月#</h5>
+
+        </div>
+
+        <div style=" padding:10px ;width:75%;display: flex;justify-content: center;align-items: center ; ">
+            <div class="card" style="padding:15px" data-dismiss="modal" data-toggle="modal" data-target="#news_model">
+                <!-- <h5>
+                     <font style="color:blue" data-toggle="modal" data-target="#label_model">贾跃亭</font>
+                     幅书法的发送到发沙发上发生大发发到付
+                     <font style="color:blue" data-toggle="modal" data-target="#label_model">乐视</font>
+                 </h5>-->
+                <h5>贾跃亭被法院立案列为失信被执行人</h5>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 第6个item -->
+    <div style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
+
+        <div style=" padding:10px ;width:75%;display: flex;justify-content: center;align-items: center ; ">
+            <div class="card" style="padding:15px" data-dismiss="modal" data-toggle="modal" data-target="#news_model">
+                <h5>
+                    贾跃亭妻子甘薇回国全权处理债务问题
+                </h5>
+
+            </div>
+        </div>
+
+        <div style="width:25%;display: flex;justify-content: center;align-items: center">
+            <h5>#18年1月#</h5>
+        </div>
+    </div>
+
+    <!-- 第7个item -->
+    <div style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
+
+
+        <div style="width:25%;display: flex;justify-content: center;align-items: center">
+
+            <h5>#18年2月#</h5>
+
+        </div>
+
+        <div style=" padding:10px ;width:75%;display: flex;justify-content: center;align-items: center ; ">
+            <div class="card" style="padding:15px" data-dismiss="modal" data-toggle="modal" data-target="#news_model">
+                <!-- <h5>
+                     <font style="color:blue" data-toggle="modal" data-target="#label_model">贾跃亭</font>
+                     幅书法的发送到发沙发上发生大发发到付
+                     <font style="color:blue" data-toggle="modal" data-target="#label_model">乐视</font>
+                 </h5>-->
+                <h5>贾跃亭公布FF获15亿美元融资</h5>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 第8个item -->
+    <div style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
+
+        <div style=" padding:10px ;width:75%;display: flex;justify-content: center;align-items: center ; ">
+            <div class="card" style="padding:15px" data-dismiss="modal" data-toggle="modal" data-target="#news_model">
+                <h5>
+                    贾跃亭质押爆仓，西部证券向法院提出诉讼
+                </h5>
+
+            </div>
+        </div>
+
+        <div style="width:25%;display: flex;justify-content: center;align-items: center">
+            <h5>#18年2月底#</h5>
+        </div>
     </div>
 
 
-    <div id="container" style="width:100%;">
-        <!-- 第1个item -->
-        <div id="item1" style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
-            <div style="width:25%;display: flex;justify-content: center;align-items: center">
+</div>
 
-                <h5>#7月3日#</h5>
+<div style="background-size:cover;background-position:center;background-image: url('https://gss0.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/9345d688d43f8794e5d0f9c9d91b0ef41bd53a2d.jpg');min-height:80px;width: 100%">
 
+
+</div>
+
+
+<!-- 下面是模态框的样式》》》》》》》》》》》》》》》》》》》》》》》》》》》》111111111111111 -->
+
+
+<!-- 时间点类型的模态框（Modal） -->
+<div class="modal fade" id="news_model1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="height: 80%; margin-top: 150px">
+        <div class="modal-content">
+            <div class="modal-body">
+                <a href="http://finance.sina.com.cn/stock/s/2016-11-17/doc-ifxxwrwh4516079.shtml" class="list-group-item list-group-item-action flex-column align-items-start active">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">「专访内华达财政部长:我为什么说乐视是庞氏骗局？」</h5>
+                        <span class="badge badge-primary badge-pill">9452阅读量</span>
+                    </div>
+                    <p class="mb-1">戳一下查看详细文章</p>
+                    <small>来自 新华网</small>
+                </a>
+                <h5 style="margin-top: 10px">相关问答</h5>
+                <a href="https://www.zhihu.com/question/377374183">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        『庞氏骗局』是什么？ - 知乎
+                        <span class="badge badge-primary badge-pill">1402赞</span>
+                    </li>
+                </a>
+                <a href="https://www.zhihu.com/question/56635281">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        乐视网到底是不是庞氏骗局？ - 知乎
+                        <span class="badge badge-primary badge-pill">152赞</span>
+                    </li>
+                </a>
+                <h5 style="margin-top: 10px">相关文章</h5>
+                <a href="https://zhuanlan.zhihu.com/p/23894016">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        乐视的ppt真的是庞氏骗局吗？ - 知乎专栏
+                        <span class="badge badge-primary badge-pill">152赞</span>
+                    </li>
+                </a>
             </div>
 
-            <div style=" padding:10px ;background:red ;width:75%;display: flex;justify-content: center;align-items: center ; ">
-                <div class="card" style="padding:15px">
-                    <h5>「
-                        <font style="color:blue" data-toggle="modal" data-target="#myModal">贾跃亭</font>幅书法的发送到发沙发上发生大发发到付」</h5>
-                    <a href="https://v.vzuu.com/video/952669038401257472" >视频</a>
-                </div>
-            </div>
         </div>
-        <!-- 第2个item -->
-        <div style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
-
-            <div style=" padding:10px ;background:red ;width:75%;display: flex;justify-content: center;align-items: center ; ">
-                <div class="card" style="padding:15px" data-dismiss="modal" data-toggle="modal" data-target="#news_model">
-                    <h5>
-                        <font style="color:blue" data-toggle="modal" data-target="#label_model">贾跃亭</font>
-                        幅书法的发送到发沙发上发生大发发到付
-                        <font style="color:blue" data-toggle="modal" data-target="#label_model">乐视</font>
-                    </h5>
-
-                </div>
-            </div>
-
-            <div style="width:25%;display: flex;justify-content: center;align-items: center">
-
-                <h5>#7月4日#</h5>
-
-            </div>
-        </div>
-        <!-- 第3个item -->
-        <div style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
-            <div style="width:25%;display: flex;justify-content: center;align-items: center">
-
-                <h5>#7月3日#</h5>
-
-            </div>
-
-            <div style=" padding:10px ;background:red ;width:75%;display: flex;justify-content: center;align-items: center ; ">
-                <div class="card" style="padding:15px">
-                    <h5>「
-                        <font style="color:blue" data-toggle="modal" data-target="#myModal">贾跃亭</font>幅书法的发送到发沙发上发生大发发到付」</h5>
-
-                </div>
-            </div>
-        </div>
-        <!-- 第4个item -->
-        <div style="display: flex;background-size:cover;background-position:center;background-image: url('./left.png');min-height:200px;width: 100%">
-
-            <div style=" padding:10px ;background:red ;width:75%;display: flex;justify-content: center;align-items: center ; ">
-                <div class="card" style="padding:15px" data-dismiss="modal" data-toggle="modal" data-target="#news_model">
-                    <h5>
-                        <font style="color:blue" data-toggle="modal" data-target="#label_model">贾跃亭</font>
-                        幅书法的发送到发沙发上发生大发发到付
-                        <font style="color:blue" data-toggle="modal" data-target="#label_model">乐视</font>
-                    </h5>
-
-                </div>
-            </div>
-
-            <div style="width:25%;display: flex;justify-content: center;align-items: center">
-
-                <h5>#7月4日#</h5>
-
-            </div>
-        </div>
-
-
-
+        <!-- /.modal-content -->
     </div>
+    <!-- /.modal -->
+</div>
 
-    <div style="background-size:cover;background-position:center;background-image: url('https://gss0.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/9345d688d43f8794e5d0f9c9d91b0ef41bd53a2d.jpg');min-height:80px;width: 100%">
-
-
+<!-- 标签类型的模态框（Modal） -->
+<div class="modal fade" id="label_model1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="margin-top: 150px">
+        <div class="modal-content" style="height: 80%;">
+            <div class="modal-body">
+                <a href="https://www.zhihu.com/question/36265793" class="list-group-item list-group-item-action flex-column align-items-start active">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">乐视控股是一个庞氏骗局吗？</h5>
+                        <span class="badge badge-primary badge-pill">5983赞</span>
+                    </div>
+                    <p class="mb-1">事先说明，题主问的是“乐视控股”是不是一个庞氏骗局，由于“乐视控股”下设“乐视网”，而公开市场获得的资料是基于“乐视网”这一上市主体的，所以以下回答是基于“乐视网”这一上市公司而言。</p>
+                    <small>来自知乎用户Molly.Niu</small>
+                </a>
+                <h5 style="margin-top: 10px">相关问答</h5>
+                <a href="https://www.zhihu.com/question/37737418">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        『庞氏骗局』是什么？ - 知乎
+                        <span class="badge badge-primary badge-pill">1402赞</span>
+                    </li>
+                </a>
+                <a href="https://www.zhihu.com/question/56635281">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        乐视网到底是不是庞氏骗局？ - 知乎
+                        <span class="badge badge-primary badge-pill">152赞</span>
+                    </li>
+                </a>
+                <h5 style="margin-top: 10px">相关文章</h5>
+                <a href="https://zhuanlan.zhihu.com/p/23894016">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        乐视的ppt真的是庞氏骗局吗？ - 知乎专栏
+                        <span class="badge badge-primary badge-pill">152赞</span>
+                    </li>
+                </a>
+            </div>
+        <!-- /.modal-content -->
     </div>
+    <!-- /.modal -->
+</div>
 
-
-
-
-    <!-- 下面是模态框的样式》》》》》》》》》》》》》》》》》》》》》》》》》》》》 -->
+    <!-- 下面是模态框的样式》》》》》》》》》》》》》》》》》》》》》》》》》》》》2222222222222 -->
 
 
     <!-- 时间点类型的模态框（Modal） -->
-    <div class="modal fade" id="news_model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="news_model2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" style="height: 80%; margin-top: 150px">
-            <div class="modal-content" style="height: 80%;">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">
-                        「贾跃亭4亿资产冻结」
-                    </h4>
-                </div>
+            <div class="modal-content">
                 <div class="modal-body">
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                    <a href="http://www.sohu.com/a/146085876_114837" class="list-group-item list-group-item-action flex-column align-items-start active">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">贾跃亭资产冻结</h5>
-                            <span class="badge badge-primary badge-pill">9000阅读量</span>
+                            <h5 class="mb-1">「国王永久消失了，王朝也分崩离析了」</h5>
+                            <span class="badge badge-primary badge-pill">4422阅读量</span>
                         </div>
                         <p class="mb-1">戳一下查看详细文章</p>
-                        <small>来自 新华网</small>
+                        <small>来自 搜狐网</small>
                     </a>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        如何评价贾跃亭的为人
-                        <span class="badge badge-primary badge-pill">1000赞</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        如何评价贾跃亭是在骗人么
-                        <span class="badge badge-primary badge-pill">1000赞</span>
-                        <span class="badge badge-primary badge-pill"></span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        如何评价贾跃亭和马云谁更加厉害
-                        <span class="badge badge-primary badge-pill">1000赞</span>
-
-                    </li>
+                    <h5 style="margin-top: 10px">相关文章</h5>
+                    <a href="https://zhuanlan.zhihu.com/p/27249901">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            乐视北美大溃败 - 知乎专栏
+                            <span class="badge badge-primary badge-pill">1402赞</span>
+                        </li>
+                    </a>
                 </div>
 
             </div>
@@ -172,54 +326,15 @@
         <!-- /.modal -->
     </div>
 
-    <!-- 标签类型的模态框（Modal） -->
-    <div class="modal fade" id="label_model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" style="height: 80%; margin-top: 150px">
-            <div class="modal-content" style="height: 80%;">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">
-                        关于 「贾跃亭」
-                    </h4>
-                </div>
-                <div class="modal-body">
-                    <ul class="list-group">
-                        <a href="https://www.zhihu.com/question/45767737/answer/197818332" class="list-group-item list-group-item-action flex-column align-items-start active">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">如何评价贾跃亭？</h5>
-                                <span class="badge badge-primary badge-pill">9000赞</span>
-                            </div>
-                            <p class="mb-1">我特么怎么知道,我特么怎么知道,我特么怎么知道,我特么怎么知道,我特么怎么知道,我特么怎么知道,.</p>
-                            <small>来自知乎用户 轮子哥</small>
-                        </a>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            如何评价贾跃亭的为人
-                            <span class="badge badge-primary badge-pill">1000赞</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            如何评价贾跃亭是在骗人么
-                            <span class="badge badge-primary badge-pill">1000赞</span>
-                            <span class="badge badge-primary badge-pill"></span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            如何评价贾跃亭和马云谁更加厉害
-                            <span class="badge badge-primary badge-pill">1000赞</span>
 
-                        </li>
-                    </ul>
-                </div>
 
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal -->
-    </div>
-
-    <script>
-        $('#label_model').on('hide.bs.modal', function () {
-            $('#news_model').modal('hide')
-            // 执行一些动作...
-        })
-    </script>
+        <script>
+    $('#label_model1').on('hide.bs.modal', function () {
+        $('#news_model1').modal('hide')
+        // 执行一些动作...
+    })
+   
+</script>
 </body>
 
 </html>
