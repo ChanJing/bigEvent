@@ -1,0 +1,55 @@
+index.wxml
+<import src="item.wxml"/>
+
+<view>
+  <scroll-view scroll-x="true" class="scroll-tab" scroll-into-view="{{toTabItem}}" scroll-with-animation="true">
+    <view id='first' class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="switchNav">
+      <view class='tab-title'>
+        共享经济时代
+      </view>
+      <view class='tab-date'>
+        2017.02.16
+      </view>
+    </view>
+    <view id="second" class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="switchNav">
+      <view class='tab-title'>
+        韩国总统弹劾
+      </view>
+      <view class='tab-date'>
+        2017.03.08
+      </view>
+    </view>
+    <view id="third" class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="switchNav">
+      <view class='tab-title'>
+        《名义》热播
+      </view>
+      <view class='tab-date'>
+        2017.03.29
+      </view>
+    </view>
+    <view id="fouth" class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="switchNav">
+      <view class='tab-title'>
+        贾跃亭与乐视
+      </view>
+      <view class='tab-date'>
+        2017.05.21
+      </view>
+    </view>
+    <view id="fifth" class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="switchNav">
+      <view class='tab-title'>
+        江歌案件
+      </view>
+      <view class='tab-date'>
+        2017.11.03
+      </view>
+    </view>
+  </scroll-view>
+
+  <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx" previous-margin="80rpx" next-margin="80rpx">
+    <swiper-item wx:for="{{eventData}}">
+      <block wx:key="*this">
+        <template is="event-card" data="{{...item}}"/> 
+      </block>
+    </swiper-item>
+  </swiper>
+</view>

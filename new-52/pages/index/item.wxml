@@ -1,0 +1,25 @@
+<!-- item.wxml -->
+<template name="item">
+  <text>{{text}}</text>
+</template>
+
+<template name="event-card">
+  <view class='event-card'>
+    <view class='event-title'>
+      {{eventTitle}}
+    </view>
+    <view class='event-desc' style='background-image: url({{backgroundImage}})'>
+      <view class='event-desc-text'>
+        {{eventDescText}}
+      </view>
+    </view>
+    <view class='event-footer'>
+      <view class='event-subscription' >
+        <button type="default" style='font-size:24rpx' bindtap="subscriptionbtn" data-substatus='{{subStatus}}' data-id="{{id}}"> {{subBtn}} </button>
+      </view>
+      <view class='event-zhihu-mark'>
+        <image style='width: 150rpx; height: 150rpx;' mode='aspectFit' src="{{zhihuLogo}}"></image>
+      </view>
+    </view>
+  </view>
+</template>
